@@ -9,3 +9,11 @@
   --prim-t-c: #3a3541;
   --sec-t-c: #89868d;
 }
+.primary-btn {
+  background: var(--prim-c);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: #fff;
+}
