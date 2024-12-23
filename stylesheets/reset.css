@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --prim-c: #521616;
+  --prim-t-c: #3a3541;
+  --sec-t-c: #89868d;
+}

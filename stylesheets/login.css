@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100vh;
+}
+.logo {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  max-width: 148px;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 3rem;
+  .inner-content {
+    width: 70%;
+  }
+}
+.content form {
+  max-width:  50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  label {
+    font-size: 15px;
+    color: var(--prim-t-c);
+  }
+  input {
+    margin-top: -8px;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #dbdcde;
+    border-radius: 8px;
+  }
+}
+.image-side {
+    width: 50%;
+  img {
+    max-height: 100vh;
+    width: 100%;
+  }
+}
