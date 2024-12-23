@@ -85,6 +85,7 @@ body {
   width: 95%;
   margin-top: 20px;
   margin: auto;
+  margin-bottom: 30px;
 }
 .project-description {
   display: flex;
@@ -102,8 +103,9 @@ body {
 .description-sub-child {
   display: flex;
   flex-direction: column;
+  border-left: 1px solid #89868d;
   border-right: 1px solid #89868d;
-  border-top: 1px solid #89868d;
+
   min-width: 20vw;
   background-color: #ffffff;
   border-radius: 2px;
@@ -114,9 +116,7 @@ body {
   background-color: #ffffff;
   color: black;
   font-weight: 500;
-  border-top: 1px solid #89868d;
-  border-left: 1px solid #89868d;
-  border-right: 1px solid #89868d;
+  border-bottom: 1px solid #89868d;
 }
 .description-span {
   display: flex;
