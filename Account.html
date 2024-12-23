@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./stylesheets/reset.css" />
     <link rel="stylesheet" href="./stylesheets/accounts.css" />
+    <link rel="stylesheet" href="./stylesheets/navbar.css" />
     <title>Account</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <div class="logo mob-logo">
+            <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+          </div>
+          <ul>
+            <li><a href="./knowledge">Knowledge base</a></li>
+            <li><a href="./project.html">Projects</a></li>
+            <li><a href="./submit-task.html">Submit Ticket</a></li>
+            <li>
+              <a href="#" class="account-link"
+                >Account <img src="./assets/Group 1000005641.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </nav>
+    </header>
     <main>
       <div class="tabs">
         <div class="tab">
@@ -62,5 +88,16 @@
         <button type="submit" class="primary-btn">Save</button>
       </form>
     </main>
+
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+      const body = document.querySelector("body");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // Toggle navbar visibility
+        body.classList.toggle("actisve");
+      });
+    </script>
   </body>
 </html>

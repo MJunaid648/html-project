@@ -1,0 +1,111 @@
+body {
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 3rem;
+  background-color: #fff;
+  border-bottom: 2px solid var(--sec-t-c);
+}
+
+.mob-logo {
+  display: none;
+}
+.logo {
+  margin: 0;
+  img {
+    width: 124px;
+  }
+}
+
+.logo a {
+  color: var(--text-c-light);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  .account-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.nav-links a {
+  color: var(--text-c-light);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Menu icon for mobile */
+.menu-icon {
+  margin-right: -1rem;
+  display: none;
+  cursor: pointer;
+  span {
+    font-size: 20px;
+    color: var(--text-c-light);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .mob-logo {
+    display: block;
+  }
+
+  /* The navbar will slide in from the left */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    width: 250px; /* Width of the sidebar */
+    height: 100%;
+    background-color: #fff;
+    transition: left 0.3s ease; /* Smooth slide-in effect */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  /* When active, slide navbar in */
+  .nav-links.active {
+    position: fixed;
+    left: 0; /* Move navbar into view */
+  }
+
+  /* Shift body content when menu is open */
+  body.active {
+    padding-left: 250px; /* Push content to the right */
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  a.account-link {
+    justify-content: center;
+    gap: 20px;
+    img {
+      width: 12px;
+    }
+  }
+}

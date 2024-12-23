@@ -1,8 +1,10 @@
 body {
-  display: flex;
-  justify-content: space-between;
   min-width: 100vh;
   /* background: #f5f6f8; */
+}
+main {
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
   margin-top: 2rem;
@@ -329,5 +331,3 @@ p.bolder {
     display: none;
   }
 }
-
-/* Tas */
