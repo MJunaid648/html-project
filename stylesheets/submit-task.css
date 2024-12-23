@@ -35,7 +35,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-
+/* Task 1 */
 .tabs {
   width: 80%;
   display: flex;
@@ -82,20 +82,127 @@ p.bold {
   font-weight: 600;
   margin-top: 15px;
 }
-
+/* Task 2 */
 .inputs {
   width: 60%;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  input {
-    padding: 8px 12px;
-    border: 1px solid #dbdcde;
-    border-radius: 8px;
-  }
+
   button {
     width: 20%;
     align-self: center;
+  }
+}
+input,
+select {
+  padding: 8px 12px;
+  border: 1px solid #dbdcde;
+  border-radius: 8px;
+}
+
+/* task 3 */
+
+.form-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  .btn-input {
+    display: flex;
+    input {
+      flex: 1;
+    }
+    button {
+      color: #fff;
+      padding: 0.7rem 1rem;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      img {
+        width: 19px;
+        height: 19px;
+      }
+      p {
+        color: #fff;
+        font-size: 13px;
+      }
+    }
+  }
+  p {
+    text-align: left;
+    color: var(--text-c-light);
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 5px;
+      color: var(--prim-c);
+      font-weight: 500;
+      font-size: 26px;
+    }
+  }
+  .editor-container {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .toolbar button,
+  .toolbar select {
+    background: none;
+    border: none;
+    margin: 2px;
+    padding: 4px 5px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+  .toolbar button:hover,
+  .toolbar select:hover {
+    background-color: #ddd;
+  }
+
+  .editor {
+    padding: 10px;
+    min-height: 200px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.5;
+    overflow: auto;
+  }
+
+  .editor:focus {
+    box-shadow: 0 0 0 2px #007bff;
+  }
+
+  @media (max-width: 768px) {
+    .toolbar {
+      justify-content: center;
+    }
+
+    .toolbar button,
+    .toolbar select {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+
+    .editor {
+      font-size: 14px;
+    }
   }
 }
 
@@ -149,6 +256,10 @@ p.bolder {
       padding: 1rem;
     }
   }
+  /* Task 2 */
+  .inputs button {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -193,3 +304,5 @@ p.bolder {
     display: none;
   }
 }
+
+/* Tas */
