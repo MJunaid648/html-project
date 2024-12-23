@@ -8,6 +8,7 @@
 :root {
   --prim-c: #521616;
   --prim-t-c: #3a3541;
+  --sec-t-c: #363435;
   --text-c-light: #89868d;
 }
 .primary-btn {
@@ -30,7 +31,3 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-
-
-}
