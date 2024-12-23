@@ -135,7 +135,7 @@ body {
   border-bottom: 1px solid #89868d;
   padding: 10.7px 10px;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 788px) {
   .description-sub-child {
     min-width: 46vw;
   }
