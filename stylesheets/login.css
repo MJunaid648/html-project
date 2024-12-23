@@ -4,8 +4,8 @@ body {
   min-width: 100vh;
 }
 .logo {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
   max-width: 148px;
 }
 .content {
@@ -13,22 +13,27 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
+  padding: 1.5rem;
+
   .inner-content {
     width: 70%;
   }
 }
-.content form {
+form {
   max-width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   label {
-    font-size: 15px;
     color: var(--prim-t-c);
   }
   input {
-    margin-top: -8px;
     width: 100%;
     padding: 8px 12px;
     border: 1px solid #dbdcde;
@@ -36,10 +41,101 @@ body {
   }
 }
 
+div.check {
+  flex-direction: row;
+  gap: 12px;
+
+  label {
+    color: var(--text-c-light);
+  }
+}
+input[type="checkbox"] {
+  accent-color: var(--prim-c);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.links {
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: var(--text-c-light);
+  }
+}
+.links-2 {
+  margin-top: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  a {
+    text-decoration: none;
+    color: var(--prim-c);
+  }
+}
 .image-side {
-  width: 50%;
+  width: 45%;
   min-height: 100vh;
   background-image: url("../assets/login-side.svg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    .inner-content {
+      width: 90%;
+    }
+  }
+  .links {
+    a {
+      font-size: 13px;
+    }
+  }
+  .links-2 {
+    margin-top: 1rem;
+    a {
+      font-size: 13px;
+    }
+  }
+  .image-side {
+    width: 40%;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .content {
+    width: 100%;
+    .inner-content {
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo {
+          margin-bottom: 5rem;
+        }
+        form{
+            width: 100%;
+        }
+    }
+  }
+  .links {
+    a {
+      font-size: 13px;
+    }
+  }
+  .links-2 {
+    margin-top: 1rem;
+    a {
+      font-size: 13px;
+    }
+  }
+  .image-side {
+    display: none;
+  }
 }

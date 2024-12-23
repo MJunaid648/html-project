@@ -3,17 +3,34 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-size: 15px;
 }
 :root {
   --prim-c: #521616;
   --prim-t-c: #3a3541;
-  --sec-t-c: #89868d;
+  --text-c-light: #89868d;
 }
 .primary-btn {
   background: var(--prim-c);
   outline: none;
   border: none;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 6px 8px;
   color: #fff;
+  cursor: pointer;
+}
+
+.sec-btn {
+  background: #fff;
+  border: 1px solid var(--prim-c);
+  outline: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  color: var(--prim-c);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+
 }
