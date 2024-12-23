@@ -25,6 +25,7 @@ main {
       border-bottom: none;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
+      color: var(--prim-t-c);
     }
   }
   .red {

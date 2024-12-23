@@ -1,15 +1,15 @@
 body {
   min-width: 100vh;
-  /* background: #f5f6f8; */
-}
-main {
   display: flex;
   justify-content: space-between;
+  /* background: #f5f6f8; */
 }
 .logo {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  max-width: 148px;
+  img {
+    max-width: 148px;
+  }
 }
 .content {
   flex: 1;
@@ -92,8 +92,11 @@ p.bold {
   flex-direction: column;
   gap: 15px;
 
-  button {
+  a {
+    margin: auto;
     width: 20%;
+  }
+  a button {
     align-self: center;
   }
 }
@@ -126,6 +129,10 @@ select {
       img {
         width: 19px;
         height: 19px;
+      }
+      a{
+        text-decoration: none;
+        color: #fff;
       }
       p {
         color: #fff;
@@ -284,7 +291,7 @@ p.bolder {
     }
   }
   /* Task 2 */
-  .inputs button {
+  .inputs a {
     width: 30%;
   }
 }

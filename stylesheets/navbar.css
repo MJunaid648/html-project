@@ -44,6 +44,7 @@ body {
   color: var(--text-c-light);
   text-decoration: none;
   font-size: 14px;
+  
 }
 
 /* Menu icon for mobile */
@@ -55,6 +56,9 @@ body {
     font-size: 20px;
     color: var(--text-c-light);
   }
+}
+a.active-link{
+  color:var( --prim-c)
 }
 
 /* Mobile responsiveness */

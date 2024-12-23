@@ -12,18 +12,24 @@
     <header>
       <nav class="navbar">
         <div class="logo">
-          <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+          <a href="/"
+            ><img src="./assets/logo.png" alt="spark"
+          /></a>
         </div>
         <div class="nav-links" id="nav-links">
           <div class="logo mob-logo">
-            <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+            <a href="/"
+              ><img src="./assets/logo.png" alt="spark"
+            /></a>
           </div>
           <ul>
-            <li><a href="./knowledge">Knowledge base</a></li>
-            <li><a href="./project.html">Projects</a></li>
+            <li>
+              <a href="./knowledge.html">Knowledge base</a>
+            </li>
+            <li><a href="./projects.html">Projects</a></li>
             <li><a href="./submit-task.html">Submit Ticket</a></li>
             <li>
-              <a href="#" class="account-link"
+              <a href="/Account.html" class="account-link active-link"
                 >Account <img src="./assets/Group 1000005641.png" alt=""
               /></a>
             </li>
@@ -37,9 +43,9 @@
     <main>
       <div class="tabs">
         <div class="tab">
-          <span>General</span>
+          <a href="./Account.html"><span>General</span></a>
         </div>
-        <span class="red">Change Password</span>
+        <a href="./change-password.html"> <span class="red">Change Password</span></a>
       </div>
       <form>
         <p class="heading">Profile Edit</p>
@@ -89,6 +95,9 @@
       </form>
     </main>
 
+    <footer>
+      <p>Copyright © 2022 - 2024 <span>Feedback Portal v2.0.2</span></p>
+    </footer>
     <script>
       const menuIcon = document.getElementById("menu-icon");
       const navLinks = document.getElementById("nav-links");

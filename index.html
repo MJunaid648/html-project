@@ -12,9 +12,36 @@
     />
     <link rel="stylesheet" href="stylesheets/spark.css" />
     <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="./stylesheets/navbar.css" />
+
     <title>Home</title>
   </head>
   <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <div class="logo mob-logo">
+            <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+          </div>
+          <ul>
+            <li><a href="./knowledge.html">Knowledge base</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./submit-task.html">Submit Ticket</a></li>
+            <li>
+              <a href="/Account.html" class="account-link"
+                >Account <img src="./assets/Group 1000005641.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </nav>
+    </header>
     <div class="hero-sec">
       <div class="hero-child">
         <h1>How can we help you?</h1>
@@ -68,5 +95,18 @@
         </div>
       </div>
     </div>
+    <footer>
+      <p>Copyright © 2022 - 2024 <span>Feedback Portal v2.0.2</span></p>
+    </footer>
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+      const body = document.querySelector("body");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // Toggle navbar visibility
+        body.classList.toggle("actisve");
+      });
+    </script>
   </body>
 </html>

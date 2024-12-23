@@ -31,3 +31,21 @@
   cursor: pointer;
 }
 
+
+footer{
+  margin-top: 1rem;
+  background-color: #fff;
+  padding: 1rem 3rem;
+p{
+  text-align: right;
+  font-size: 14px;
+  span{
+    color:var(--prim-c)
+  }
+}
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}

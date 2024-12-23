@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" href="./stylesheets/single-project.css" />
+    <link rel="stylesheet" href="./stylesheets/navbar.css" />
+    <link
+      href="https://cdn.quilljs.com/1.3.7/quill.snow.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.quilljs.com/1.3.7/quill.min.js"></script>
+
+    <title>Single Task</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <div class="logo mob-logo">
+            <a href="/"><img src="./assets/logo.png" alt="spark" /></a>
+          </div>
+          <ul>
+            <li>
+              <a href="./knowledge.html">Knowledge base</a>
+            </li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./submit-task.html">Submit Ticket</a></li>
+            <li>
+              <a href="/Account.html" class="account-link active-link"
+                >Account <img src="./assets/Group 1000005641.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <p class="heading">Project Name</p>
+        <div>
+          <label for="project-name">Project Name </label>
+          <input
+            type="text"
+            name="project-name"
+            id="project-name"
+            placeholder="Project Name "
+          />
+        </div>
+        <div>
+          <label for="business-lines">Business Lines</label>
+          <input
+            type="text"
+            name="business-lines"
+            id="business-lines"
+            placeholder="Business Lines"
+          />
+        </div>
+        <div>
+          <label for="client-name">Client Name</label>
+          <input
+            type="text"
+            name="client-name"
+            id="client-name"
+            placeholder="Client Name"
+          />
+        </div>
+        <div class="col-2">
+          <div>
+            <label for="start-date">Start Date</label>
+            <input
+              type="text"
+              name="start-date"
+              id="start-date"
+              placeholder="Start Date"
+            />
+          </div>
+          <div>
+            <label for="end-date">End Date</label>
+            <input
+              type="text"
+              name="end-date"
+              id="end-date"
+              placeholder="End Date"
+            />
+          </div>
+        </div>
+        <div class="form-sec">
+          <label for="description">Description</label>
+          <div id="editor-container"></div>
+        </div>
+      </form>
+
+      
+
+
+    </main>
+
+    <footer>
+      <p>Copyright © 2022 - 2024 <span>Feedback Portal v2.0.2</span></p>
+    </footer>
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.getElementById("nav-links");
+      const body = document.querySelector("body");
+
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // Toggle navbar visibility
+        body.classList.toggle("actisve");
+      });
+    </script>
+
+    <script>
+      // Initialize Quill editor
+      const quill = new Quill("#editor-container", {
+        theme: "snow",
+        placeholder: "Enter the project description...",
+        modules: {
+          toolbar: [
+            [
+              { header: [1, 2, 3, false] },
+              "bold",
+              "italic",
+              "underline",
+              { list: "ordered" },
+              { list: "bullet" },
+              "link",
+              "image",
+            ],
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>
