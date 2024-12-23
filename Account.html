@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" href="./stylesheets/accounts.css" />
+    <title>Account</title>
+  </head>
+  <body>
+    <main>
+      <div class="tabs">
+        <div class="tab">
+          <span>General</span>
+        </div>
+        <span class="red">Change Password</span>
+      </div>
+      <form>
+        <p class="heading">Profile Edit</p>
+        <div>
+          <label for="fullname">Full Name</label>
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Jared Ruff"
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="jRuff@bdrt.net"
+          />
+        </div>
+        <div>
+          <label for="timezone">Time Zone</label>
+          <input
+            type="date"
+            name="timezone"
+            id="timezone"
+            placeholder="--Default Timezone"
+          />
+        </div>
+
+        <div>
+          <label for="imageUpload">Change Header Image</label>
+          <div class="image-upload">
+            <label class="custom-upload" for="imageUpload"></label>
+            <input
+              name="imageUpload"
+              type="file"
+              id="imageUpload"
+              accept="image/*"
+            />
+            <p class="drop">Drop your image here. <span>or browse</span></p>
+            <p>Support. JPEG PNG</p>
+          </div>
+        </div>
+        <button type="submit" class="primary-btn">Save</button>
+      </form>
+    </main>
+  </body>
+</html>
