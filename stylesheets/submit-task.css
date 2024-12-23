@@ -22,6 +22,9 @@ body {
     align-items: center;
     gap: 16px;
   }
+  p {
+    text-align: center;
+  }
 }
 
 .image-side {
@@ -77,21 +80,22 @@ body {
 }
 p.bold {
   font-weight: 600;
-  text-align: center;
   margin-top: 15px;
 }
 
-.btns {
-  margin-top: 20px;
+.inputs {
+  width: 60%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   gap: 15px;
+  input {
+    padding: 8px 12px;
+    border: 1px solid #dbdcde;
+    border-radius: 8px;
+  }
   button {
-    padding: 1rem 2rem;
-
-    p {
-      margin-top: 10px;
-    }
+    width: 20%;
+    align-self: center;
   }
 }
 
@@ -99,7 +103,6 @@ p.bolder {
   font-weight: 600;
   font-size: 12px;
   margin-top: 15px;
-  text-align: center;
 }
 
 .bullets {
@@ -180,6 +183,10 @@ p.bolder {
         }
       }
     }
+  }
+
+  .inputs {
+    width: 80%;
   }
 
   .image-side {
