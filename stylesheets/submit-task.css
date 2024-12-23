@@ -1,0 +1,188 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100vh;
+}
+.logo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 148px;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+
+  .inner-content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+.image-side {
+  width: 45%;
+  min-height: 100vh;
+  background-image: url("../assets/login-side.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.tabs {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  .tab {
+    flex: 1;
+    p {
+      display: flex;
+      align-items: center;
+      color: #c4b3b5;
+      font-size: 16px;
+      font-weight: 600;
+      span.num {
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        background: #c4b3b5;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 12px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .active {
+    p {
+      color: var(--prim-c);
+      span.num {
+        background: var(--prim-c);
+      }
+    }
+  }
+  hr {
+    flex: 1;
+    border: none;
+    border-bottom: 2px solid #c4b3b5;
+  }
+}
+p.bold {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  button {
+    padding: 1rem 2rem;
+
+    p {
+      margin-top: 10px;
+    }
+  }
+}
+
+p.bolder {
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  .bullet {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    line-height: 13px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    max-width: 120px;
+  }
+  .content {
+    .inner-content {
+      width: 100%;
+    }
+  }
+
+  .tabs {
+    width: 100%;
+    .tab {
+      p {
+        font-size: 14px;
+        span.num {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .btns {
+    button {
+      padding: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    min-width: 100%;
+  }
+  .content {
+    width: 100%;
+    padding: 1rem 0;
+    .inner-content {
+      width: 100%;
+      padding-inline: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .logo {
+        margin: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .tabs {
+    margin-top: -2rem;
+    width: 100%;
+    .tab {
+      flex: 1;
+      p {
+        font-size: 14px;
+        span.num {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .image-side {
+    display: none;
+  }
+}
